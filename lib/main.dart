@@ -66,9 +66,19 @@ class _TestState extends State<Test> {
                       ),
                     );
                   },
-                  child: ListTile(
-                    title: Text("Name :${user.name}"),
-                    subtitle: Text("Email :${user.email}"),
+                  child: Container(
+                    margin: EdgeInsets.symmetric(vertical: 2, horizontal: 3),
+                    decoration: BoxDecoration(
+                      border: Border.all(
+                        color: Colors.green,
+                        width: 1,
+                      ),
+                      borderRadius: BorderRadius.circular(5),
+                    ),
+                    child: ListTile(
+                      title: Text("Name :${user.name}"),
+                      subtitle: Text("Email :${user.email}"),
+                    ),
                   ),
                 );
               },
