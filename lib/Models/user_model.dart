@@ -3,6 +3,7 @@
 //     final userModel = userModelFromJson(jsonString);
 
 import 'dart:convert';
+import 'package:fluttertoast/fluttertoast.dart';
 
 List<UserModel> userModelFromJson(String str) =>
     List<UserModel>.from(json.decode(str).map((x) => UserModel.fromJson(x)));
@@ -26,7 +27,7 @@ class UserModel {
   String name;
   String username;
   String email;
-  Address address;
+  Address address; //
   String phone;
   String website;
   Company company;
